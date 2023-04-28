@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu:wght@300&display=swap');
+* {
+    font-family: 'Roboto';
+}
+input {
+    border: none;
+    font-family: monospace;
+}
+#textArea {
+    resize: horizontal;
+}
+header {
+    background-color: rgb(157, 201, 160);
+    color: #000;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+header h1 {
+    padding-left: 3px;
+    font-family: 'Righteous';
+    padding: 9px 12px;
+    font-size: x-large;
+    background-color: rgb(157, 201, 160);
+    font-weight: 100;
+}
+header h3, input {
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+header h2 {
+    font-size: 1.3em;
+    padding-left: 9px;
+    text-shadow: 0 0 4px rgb(83, 83, 83);
+}
+header h2 input {
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: rgb(157, 201, 160);
+}
+header p {
+    font-size: 1.0em;
+    text-align: right;
+    text-shadow: 0 0 6px rgb(141, 141, 141);
+}
+header p input {
+    cursor: text;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+th {
+	background-color: rgb(157, 201, 160);
+}
+
+tfoot td {
+	font-weight: bold;
+}
+
+.observaciones {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 20px;
+}
+.observaciones li {
+    margin: 5px;
+}
+option, select {
+    font-size: 0.95em;
+    cursor: pointer;
+}
+.enviar button {
+    border: 1px solid #000;
+    padding: 10px 14px;
+    border-radius: 100px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+.enviar button:hover {
+    background-color: yellowgreen;
+    transition: 0.1s;
+}
+.contacto {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    text-align: right;
+    padding: 20px;
+    background-color: rgb(157, 201, 160);
+}
+.contacto a {
+    text-decoration: none;
+    color: royalblue;
+    padding: 5px;
+}
+.contacto a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.contacto img:hover {
+    transform:translateY(-15%);
+    transition: 0.1s ease-in-out;
+}
+.contacto iframe {
+    margin-top: 15px;
+    width: fit-content;
+    height: auto;
+    border-radius: 10px;
+}
+.codigo_barra {
+    position: relative;
+    right: 60%;
+}
+/* Carta */
+.card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-card {
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0;
+    padding: 2px;
+    border-radius: 5px;
+}
+.compartirMenu {
+    background-color: rgb(188, 204, 218);
+    width: 500px;
+    height: auto;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: box-shadow 0.2s;
+    color: rgb(0, 0, 0);
+}
+#llamar {
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#llamar:hover {
+    background-color: rgb(88, 231, 45);
+    transition: 0.1s ease-in-out;
+}
+.compartirMenu a {
+    color: tomato;
+    text-decoration: none;
+}
+.redesMenu button {
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.redesMenu i:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px aliceblue;
+}
+.redesMenu #face:hover {
+    color: royalblue;
+}
+.redesMenu #twitt:hover {
+    color: rgb(0, 140, 255);
+}
+.redesMenu #what:hover {
+    color: rgb(10, 161, 10);
+}
+.redesMenu #linked:hover {
+    color: rgba(0, 68, 255, 0.795);
+}
+.redesMenu i {
+    padding: 5px;
+    font-size: 1.75em;
+}
+.redesMenu hr {
+    border-radius: 50%;
+}
+#cerrarCarta {
+    background-color: tomato;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+}
+#cerrarCarta i {
+    font-size: 1.0em;
+    text-align: center;
+}
+#cerrarCarta:hover {
+    background-color: lightsalmon;
+}
+footer {
+	margin-top: 20px;
+	text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 1px #000;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(0, 140, 255);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+@media screen and (max-width:980px) {
+    body {
+        display: block;
+    }
+    input {
+        width: 55px;
+    }
+    .container-card, .compartirMenu {
+        display: block;
+    }
+    header h1 input {
+        padding-left: 3px;
+    }
+    #textArea {
+        max-width: 88px;
+    }
+    .pago-exitoso {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:740px) {
+    body {
+        display: block;
+    }
+    input {
+        width: 55px;
+    }
+    .container-card, .compartirMenu {
+        display: block;
+        width: fit-content;
+    }
+    header h1 input {
+        padding-left: 3px;
+    }
+    #textArea {
+        max-width: 88px;
+    }
+    .pago-exitoso {
+        display: block;
+    }
+}
+
+@media screen and (max-width:844px) {
+    body {
+        display: block;
+    }
+    #textArea {
+        max-width: 88px;
+    }
+    .pago-exitoso {
+        display: block;
+    }
+}
+
+/* Pago Exitoso */
+.container-pago {
+    background-color: #ccc;
+    border-radius: 8px;
+}
+#check {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 10px 12px;
+    margin-top: 20px;
+    font-size: 1.3em;
+    background-color: rgb(47, 190, 47);
+    color: aliceblue;
+    box-shadow: 0 1px 2px #000;
+}
+.pago {
+    text-align: center;
+}
+.pago-exitoso {
+    margin: 10px;
+    padding: 10px;
+}
+.pago-exitoso i {
+    margin-top: 8px;
+    padding: 10px;
+    color: #000;
+}
+.pago-exitoso li {
+    list-style: none;
+}
+.pago-exitoso a {
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 8px;
+    border-radius: 50px;
+    margin: 8px;
+}
+.pago-exitoso a:hover {
+    color: rgb(0, 140, 255);
+    text-decoration: underline;
+}
+.container-detalle {
+    color: rgb(117, 129, 165);
+    background-color: aliceblue;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 1px 3px #000;
+}
+
+/* Procesando pago */
+.container-proceso {
+    background-color: #ccc;
+    width: 80%;
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 0 1px 2px #000;
+}
+.procesando {
+    margin: 9px;
+}
