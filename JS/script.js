@@ -129,7 +129,7 @@ function compartirFacebook() {
 };
 
 function compartirWhatsapp() {
-  var mensaje = "Echa un vistazo a éste formulario web para facturas, recibos, presupuestos!: " + window.location.href;
+  var mensaje = "Servivio técnico de electricidad Electrón de Martín Lucero!: " + window.location.href;
   window.open('https://wa.me/?text=' + encodeURIComponent(mensaje));
 };
 
