@@ -111,17 +111,7 @@ window.onload = function() {
   }
 }
 
-// Guardamos los datos en el localStorage antes del submit
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
 
-  const input = inputField.value;
-  localStorage.setItem('myFormInput', input);
-
-  const select = selectField.value;
-  localStorage.setItem('myFormSelect', select);
-
-});
 
 // Función compartir en redes sociales
 function compartirFacebook() {
