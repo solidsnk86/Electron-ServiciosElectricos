@@ -87,7 +87,8 @@ option, select {
     background-color: white;
 }
 .enviar button:hover {
-    background-color: yellowgreen;
+    background-color: black;
+    color: aliceblue;
     transition: 0.1s;
 }
 .contacto {
