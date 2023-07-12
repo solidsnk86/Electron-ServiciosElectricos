@@ -1,4 +1,5 @@
-# Formulario para facturación de un amigo como ejemplo:
+# Este formulario es para uso personal de un compañero amigo, oara presupuestos.
+
 ### Electron-ServiciosElectricos
 
 - Mis redes de contacto
