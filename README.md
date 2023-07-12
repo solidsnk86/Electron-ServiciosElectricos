@@ -1,4 +1,4 @@
-# Este formulario es para uso personal de un compañero amigo, oara presupuestos.
+# Este formulario es para uso personal de un compañero amigo, para presupuestos.
 
 ### Electron-ServiciosElectricos
 
