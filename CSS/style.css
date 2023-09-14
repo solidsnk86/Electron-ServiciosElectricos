@@ -252,6 +252,7 @@ header {
     right: 10px;
     width: 100px;
     height: 150px;
+    filter: grayscale(70%);
 }
 
 header #patternId {
