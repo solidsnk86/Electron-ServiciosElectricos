@@ -551,7 +551,7 @@ phoneMe.onclick = () => {
 
 const myLinkedin = document.getElementById('my-linkedin');
 myLinkedin.onclick = () => {
-  window.open('http://www.instagram.com/');
+  window.open('https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA==');
 }
 
 const myGithub = document.getElementById('my-github');
