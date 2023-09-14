@@ -107,7 +107,7 @@ for (let i = 0; i < cantidadInputs.length; i++) {
 
 // función menú carta
 function compartirFormulario() {
- const ulrAvatar = 'https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA=='
+ const ulrAvatar = 'https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg'
 
   card = document.createElement('div');
   card.classList.add('card-form-container');
