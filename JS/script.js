@@ -126,7 +126,7 @@ function compartirFormulario() {
             <div class="tw-followCard-info">
                 <strong>Martín Lucero</strong>
                 <span 
-                class="tw-followcard-infoUserName">@chuchoconca</span>
+                class="tw-followcard-infoUserName">@chucho_conca</span>
             </div>
             <aside>
             <button class="tw-followCard-button" id="seguir-instagram">
