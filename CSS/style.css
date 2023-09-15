@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+
 * {
     font-family: 'Bricolage Grotesque', sans-serif;
 }
@@ -34,7 +35,6 @@ body {
     float: right;
     right: 10px;
     margin: 10px auto;
-    font-size: 1.3rem;
 }
 
 .navbar .toggle-button i {
@@ -267,7 +267,7 @@ header {
     right: 10px;
     width: 100px;
     height: 150px;
-    filter: grayscale(70%);
+    filter: grayscale(60%);
 }
 
 header #patternId {
@@ -342,6 +342,10 @@ header #numeroFact {
 
 .tabla .cantidad {
     width: 50px;
+}
+
+#cantidad-762 {
+    display: none;
 }
 
 .tabla .precio {
@@ -570,23 +574,26 @@ option:checked {
     border: none;
 }
 
-.colaboracion h3 {
+.colaboracion p {
     font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .colaboracion a {
     border: 1px solid #f2f2f2;
     border-radius: 5px;
-    padding: 6px 12px;
+    padding: 4px 10px;
     text-decoration: none;
     color: #EAEAEA;
+    font-weight: 900;
 }
 
 .colaboracion a:hover {
     background-color: greenyellow;
+    filter: drop-shadow(0 0 10px greenyellow);
     color: #222222;
-    transition: .2s ease-in-out;
-    font-weight: 900;
+    transition: .9s ease-in-out;
 }
 
 .compartirMenu .tw-followCard {
@@ -602,7 +609,7 @@ option:checked {
     display: inline-flex;
     background-color: transparent;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .compartirMenu .tw-followCard-info {
@@ -646,6 +653,13 @@ option:checked {
     color: #fafafa;
 }
 
+.redesMenu #X-logo {
+    position: relative;
+    top: 3px;
+    width: 21px;
+    height: 21px;
+}
+
 .redesMenu i:hover {
     transform: scale(1.2);
     text-shadow: 2px 3px 7px #777;
@@ -656,8 +670,9 @@ option:checked {
     color: royalblue;
 }
 
-.redesMenu #twitt:hover {
-    color: rgb(0, 140, 255);
+.redesMenu #X-logo:hover {
+    transform: scale(1.2);
+    transition: .2s all;
 }
 
 .redesMenu #what:hover {
@@ -782,6 +797,11 @@ option:checked {
     font-weight: 900;
 }
 
+#phone-me {
+    position: relative;
+    top: 1px;
+    font-size: 33px;
+}
 
 /**|||||||
 * FOOTER |
@@ -827,12 +847,32 @@ Responsive   |
         width: 140px;
         height: 140px;
     }
-    .tabla input {
-        width: 100%;
+    .tabla .descripcion 
+    #producto1,
+    #producto2,
+    #producto3,
+    #producto4,
+    #producto5,
+    #producto6 {
+        width: 400px;
     }
-    .tabla .descripcion input {
-        width: 250px;
+    .tabla 
+    #cantidad1,
+    #cantidad2,
+    #cantidad3,
+    #cantidad4,
+    #cantidad5,
+    #cantidad6 {
+        width: 80px;
     }
+    .tabla #total1,
+    #total2,
+    #total3,
+    #total4,
+    #total5,
+    #total6 {
+        width: 80px;
+    } 
     .tabla .total {
         text-align: center;
         width: 50px;
@@ -861,12 +901,41 @@ Responsive   |
     header #empresaNombre::placeholder {
         font-size: 1.1rem;
     }
+    #cantidad-1100 {
+        display: none;
+    }
+    #cantidad-762 {
+        display: block;
+    }
     .tabla {
         width: 100%;
     }
-    .tabla input {
-        max-width: 80px;
+    .tabla .descripcion 
+    #producto1,
+    #producto2,
+    #producto3,
+    #producto4,
+    #producto5,
+    #producto6 {
+        width: 80px;
     }
+    .tabla .descripcion 
+    #cantidad1,
+    #cantidad2,
+    #cantidad3,
+    #cantidad4,
+    #cantidad5,
+    #cantidad6 {
+        width: 50px;
+    }
+    .tabla #total1,
+    #total2,
+    #total3,
+    #total4,
+    #total5,
+    #total6 {
+        width: 80px;
+    } 
     .compartirMenu {
         margin: 0 10px;
     }
@@ -909,18 +978,26 @@ Responsive   |
     .article-header {
         display: none;
     }
+    .header-title {
+        width: 153px;
+        height: 153px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
     .enviar {
         display: none;
     }
     .contacto {
         position: relative;
         border: 1px solid #000;
-        height: fit-content;
+        height: 110px;
     }
     .contacto iframe {
-        width: 300px;
-        height: 120px;
-        margin: 5px 0 5px;
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        height: 110px;
     }
     .contactos {
         width: auto;
