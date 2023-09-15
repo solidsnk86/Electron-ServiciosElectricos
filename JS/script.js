@@ -119,7 +119,7 @@ function compartirFormulario() {
     <br>
       <div class="colaboracion">
           <h1>Servicio Electrón© de Martin Lucero</h1>
-          <h3>¡Si estás interesado en mis <br>servicios eléctricos, no dudes en contactarme!</h3>
+          <p>¡Si estás interesado en mis <br>servicios eléctricos, no dudes en contactarme!</p>
 
           <main class="tw-followCard-header">
             <img src=${ulrAvatar} class="tw-followCard-avatar" />
@@ -137,7 +137,7 @@ function compartirFormulario() {
 
           <h5>Por consultas o presupuestos escribime acá:</h5>
           <a target="_blank" title="Enviar Whatsapp" href="https://api.whatsapp.com/send?phone=542665290020&text=Hola,%20estoy%20interesado%20en
-          %20tu%20servicio%20de%20técnico%20electricista%20mi%20nombre es"><i class="bx bi-whatsapp"></i> Contactame!</a>
+          %20tu%20servicio%20de%20técnico%20electricista%20mi%20nombre es"><i class="bx bi-whatsapp"></i> Contacto!</a>
       </div>
       <br>
     <hr>
@@ -145,7 +145,7 @@ function compartirFormulario() {
     <aside class="redesMenu">
     <p>Compartir en redes sociales:</p>
     <button onclick="compartirFacebook()"><i id="face" class="bx bi-facebook"></i></span></button>
-    <button onclick="compartirTwitter()"><i id="twitt" class="bx bi-twitter"></i></span></button>
+    <button onclick="compartirTwitter()"><img src="https://raw.githubusercontent.com/solidsnk86/formularioWeb/22059656adbe0d3cce9c5f69c000b4eabc53cfe2/img/X_logo_2023.svg" id="X-logo" alt="Logo Twitter" /></span></button>
     <button onclick="compartirWhatsapp()"><i id="what" class="bx bi-whatsapp"></i></span></button>
     <button onclick="compartirLinkedIn()"><i id="linked" class="bx bi-linkedin"></i></span></button>
     </aside>
@@ -156,9 +156,14 @@ function compartirFormulario() {
   document.body.appendChild(card);
   const seguirInsta = document.getElementById('seguir-instagram');
 
-  seguirInsta.onclick = () => {
-    window.open('https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA==')
-  }
+  document.getElementById('seguir-instagram').onclick = function() {
+    const instagramUrl = 'instagram://user?username=martin_lucero_0';
+    const fallbackUrl = 'https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA==';
+    const win = window.open(instagramUrl, '_blank');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = fallbackUrl;
+    }
+  };
 };
 
 function colaboración() {
@@ -232,7 +237,7 @@ function compartirLinkedIn() {
       const input = document.createElement("input");
       const imgBanco = document.createElement('img');
 
-      imgBanco.src = 'img/banco.png';
+      imgBanco.src = 'https://raw.githubusercontent.com/solidsnk86/formularioWeb/master/img/banco.png';
       imgBanco.style.position = 'absolute'
       imgBanco.style.width = '25px';
       imgBanco.style.height = '25px'
@@ -256,7 +261,7 @@ function compartirLinkedIn() {
       const input = document.createElement("input");
       const imgMercado = document.createElement("img");
 
-      imgMercado.src = 'img/unnamed-removebg-preview.png';
+      imgMercado.src = 'https://raw.githubusercontent.com/solidsnk86/formularioWeb/master/img/unnamed-removebg-preview.png';
       imgMercado.style.width = '37px';
       imgMercado.style.height = '40px'
       imgMercado.style.position = 'absolute'
@@ -275,9 +280,9 @@ function compartirLinkedIn() {
       div.appendChild(imgMercado);
       
     } else if (formaPagoValue === "opcion3") {
-        const div3 = document.createElement("div");
+      const div3 = document.createElement("div");
       const etiqueta = document.createElement("label");
-       const etiqueta2 = document.createElement("label");
+      const etiqueta2 = document.createElement("label");
       const input = document.createElement("input");
       const input2 = document.createElement("input");
       const pagoEfectivo = document.createElement('img');
@@ -285,7 +290,7 @@ function compartirLinkedIn() {
       div3.style.display = 'flex';
       div3.style.margin = '20px';
       div3.style.width = '110px';
-      pagoEfectivo.src = 'img/pagar.png';
+      pagoEfectivo.src = 'https://raw.githubusercontent.com/solidsnk86/formularioWeb/master/img/pagar.png';
       etiqueta2.style.marginLeft = '30px';
       pagoEfectivo.style.width = '30px';
       pagoEfectivo.style.marginLeft = '25px';
