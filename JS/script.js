@@ -154,7 +154,6 @@ function compartirFormulario() {
 </div>
   `;
   document.body.appendChild(card);
-  const seguirInsta = document.getElementById('seguir-instagram');
 
   document.getElementById('seguir-instagram').onclick = function() {
     const instagramUrl = 'instagram://user?username=martin_lucero_0';
@@ -556,7 +555,14 @@ phoneMe.onclick = () => {
 
 const myLinkedin = document.getElementById('my-linkedin');
 myLinkedin.onclick = () => {
-  window.open('https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA==');
+  myLinkedin.onclick = function() {
+    const instagramUrl = 'instagram://user?username=martin_lucero_0';
+    const fallbackUrl = 'https://www.instagram.com/martin_lucero_0/?igshid=MzRlODBiNWFlZA==';
+    const win = window.open(instagramUrl, '_blank');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = fallbackUrl;
+    }
+  }
 }
 
 const myGithub = document.getElementById('my-github');
