@@ -851,6 +851,9 @@ Responsive   |
     .article-header {
         margin: 60px 100px 25px;
     }
+    .article-drop-list li {
+        font-size: 1em;
+    }
     .header-title {
         position: absolute;
         top: 15px;
@@ -905,6 +908,13 @@ Responsive   |
 @media (max-width:762px) {
     #myForm {
         margin: 10px;
+    }
+    .article-header #mas-info {
+        font-size: 1em;
+    }
+    .drop-chevron {
+       font-size: 1.3em;
+       bottom: 1px;
     }
     header #empresaNombre {
         width: max-content;
