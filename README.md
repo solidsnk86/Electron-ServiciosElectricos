@@ -17,4 +17,4 @@
 
 *Pueden visitar éste sitio web para aprender a configurar un CPE inalámbrico*
   
-[![Static Badge](https://img.shields.io/badge/Neo-Tecs-blueviolet)](https://neotecs.tech)
+[![Static Badge](https://img.shields.io/badge/Neo-Tecs-blueviolet)](https://neotecs.netlify.app)
